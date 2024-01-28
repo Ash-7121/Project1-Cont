@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'vfq3vqx',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
     <style>
         body {
             margin: 0;
@@ -102,12 +112,13 @@
             padding-bottom: 45px;
         }
 
+        /*icons*/
         .apple {
             margin: 0;
             grid-column: 12/13;
             grid-row: 8/9;
             padding-left: 110px;
-            padding-top: 50px;
+            padding-top: 30px;
         }
 
         .cherry {
@@ -115,15 +126,15 @@
             grid-column: 12/13;
             grid-row: 8/9;
             padding-left: 220px;
-            padding-top: 50px;
+            padding-top: 30px;
         }
-        
+
         .peach {
             margin: 0;
             grid-column: 12/13;
             grid-row: 8/9;
             padding-left: 54px;
-            padding-top: 145px;
+            padding-top: 125px;
         }
 
         .orange {
@@ -131,7 +142,7 @@
             grid-column: 12/13;
             grid-row: 8/9;
             padding-left: 164px;
-            padding-top: 145px;
+            padding-top: 125px;
         }
 
         .tomato {
@@ -139,7 +150,7 @@
             grid-column: 12/13;
             grid-row: 8/9;
             padding-left: 274px;
-            padding-top: 145px;
+            padding-top: 125px;
         }
 
         .pear {
@@ -147,7 +158,7 @@
             grid-column: 12/13;
             grid-row: 8/9;
             padding-left: 54px;
-            padding-top: 240px;
+            padding-top: 220px;
         }
 
         .pumpkin {
@@ -155,7 +166,7 @@
             grid-column: 12/13;
             grid-row: 8/9;
             padding-left: 164px;
-            padding-top: 240px;
+            padding-top: 220px;
         }
 
         .coconut {
@@ -163,7 +174,7 @@
             grid-column: 12/13;
             grid-row: 8/9;
             padding-left: 274px;
-            padding-top: 240px;
+            padding-top: 220px;
         }
 
         .flour {
@@ -171,7 +182,7 @@
             grid-column: 12/13;
             grid-row: 8/9;
             padding-left: 110px;
-            padding-top: 335px;
+            padding-top: 315px;
         }
 
         .sugar {
@@ -179,9 +190,116 @@
             grid-column: 12/13;
             grid-row: 8/9;
             padding-left: 220px;
-            padding-top: 335px;
+            padding-top: 315px;
         }
 
+        /*menu titles*/
+        .ingredients {
+            margin: 0;
+            grid-column: 12/13;
+            grid-row: 7/9;
+            font-family: "fot-seurat-pron", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            color: #5A3825;
+            text-align: center;
+            font-size: 40px;
+            text-decoration: underline;
+            padding-top: 20px;
+            padding-right: 30px;
+        }
+
+        .recipes {
+            margin: 0;
+            grid-column: 1/2;
+            grid-row: 7/9;
+            font-family: "fot-seurat-pron", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            color: #5A3825;
+            text-align: center;
+            font-size: 40px;
+            text-decoration: underline;
+            padding-top: 20px;
+            padding-left: 30px;
+        }
+
+        /*nested grid*/
+        .nested {
+            display: grid;
+            background-color: rgba(222, 221, 169, 0);
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            grid-column: 1/2;
+            grid-row: 7/9;
+            margin-left: 55px;
+            margin-right: 15px;
+            margin-top: 120px;
+            margin-bottom: 65px;
+            overflow: auto;
+            height: 350px;
+        }
+
+        .nested p {
+            font-family: "fot-seurat-pron", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            color: #5A3825;
+            text-align: center;
+            line-height: 1.3;
+        }
+
+        .nestedtop {
+            text-decoration: underline;
+            display: grid;
+            background-color: rgba(222, 221, 169, 0);
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            grid-column: 1/2;
+            grid-row: 7/9;
+            margin-left: 45px;
+            margin-right: 20px;
+            margin-top: 70px;
+            margin-bottom: 65px;
+            overflow: auto;
+
+        }
+
+        .nestedtop p {
+            font-family: "fot-seurat-pron", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            color: #5A3825;
+            text-align: center;
+        }
+
+        ul {
+            align-items: right;
+            font-family: "fot-seurat-pron", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            color: #5A3825;
+            margin-top: 5px;
+            line-height: 1.4;
+        }
+
+        /*checkmark*/
+        .checkbox-round {
+            width: 1em;
+            height: 1em;
+            background-color: rgb(247, 243, 226);
+            border-radius: 50%;
+            vertical-align: middle;
+            border: 1px solid #ddd;
+            appearance: none;
+            -webkit-appearance: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .checkbox-round:checked {
+            background-color: rgb(231, 98, 92);
+        }
     </style>
 </head>
 
@@ -207,7 +325,307 @@
         <img class="coconut" width="96" height="87.6" src="icons/coconut.PNG">
         <img class="flour" width="96.6" height="88.2" src="icons/flour.PNG">
         <img class="sugar" width="95.4" height="87.6" src="icons/sugar.PNG">
+        <h1 class="ingredients">Ingredients</h1>
+        <h1 class="recipes">Recipes</h1>
+        <div class="nestedtop">
+            <p>Name</p>
+            <p>Ingredients</p>
+        </div>
+        <div class="nested">
+            <p>Apple Jam</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 3 Apples
+                </li>
+            </ul>
+            <p>Apple Jelly</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 2 Apples
+                </li>
+            </ul>
+            <p>Apple Pie</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 3 Flour
+                </li>
+                <li> <input type="checkbox" class="checkbox-round"> 2 Sugar
+                </li>
+                <li> <input type="checkbox" class="checkbox-round"> 2 Apples
+                </li>
+            </ul>
+            <p>Apple Smoothie</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 2 Apples
+                </li>
+            </ul>
+            <p>Apple Tart</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 1 Flour
+                </li>
+                <li> <input type="checkbox" class="checkbox-round"> 1 Sugar
+                </li>
+                <li> <input type="checkbox" class="checkbox-round"> 1 Apple
+                </li>
+            </ul>
+            <p>Cherry Jam</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 3 Cherries
+            </ul>
+            <p>Cherry Jelly</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 2 Cherries
+            </ul>
+            <p>Cherry Pie</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 3 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 2 Sugar
+                <li> <input type="checkbox" class="checkbox-round"> 2 Cherries
+            </ul>
+            <p>Cherry Smoothie</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 2 Cherries
+            </ul>
+            <p>Cherry Tart</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 1 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 1 Sugar
+                <li> <input type="checkbox" class="checkbox-round"> 1 Cherry
+            </ul>
+            <p>Coconut Cookies</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 1 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 1 Sugar
+                <li> <input type="checkbox" class="checkbox-round"> 1 Coconut
+            </ul>
+            <p>Coconut Juice</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 1 Coconut
+            </ul>
+            <p>Coconut Milk</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 2 Coconuts
+            </ul>
+            <p>Coconut Oil</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 3 Coconuts
+            </ul>
+            <p>Coconut Pancakes</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 2 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 2 Sugar
+                <li> <input type="checkbox" class="checkbox-round"> 2 Coconuts
+            </ul>
+            <p>Coconut Pudding</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 1 Sugar
+                <li> <input type="checkbox" class="checkbox-round"> 2 Coconuts
+            </ul>
+            <p>Fruit Cupcakes
+            </p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 1 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 1 Apple
+                <li> <input type="checkbox" class="checkbox-round"> 1 Orange
+                <li> <input type="checkbox" class="checkbox-round"> 1 Pear
+                <li> <input type="checkbox" class="checkbox-round"> 1 Peach
+                <li> <input type="checkbox" class="checkbox-round"> 1 Cherry
+            </ul>
+            <p>Fruit Pizza</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 3 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 1 Apple
+                <li> <input type="checkbox" class="checkbox-round"> 1 Orange
+                <li> <input type="checkbox" class="checkbox-round"> 1 Pear
+                <li> <input type="checkbox" class="checkbox-round"> 1 Peach
+                <li> <input type="checkbox" class="checkbox-round"> 1 Cherry
+            </ul>
+            <p>Fruit Salad</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 1 Apple
+                <li> <input type="checkbox" class="checkbox-round"> 1 Orange
+                <li> <input type="checkbox" class="checkbox-round"> 1 Pear
+                <li> <input type="checkbox" class="checkbox-round"> 1 Peach
+                <li> <input type="checkbox" class="checkbox-round"> 1 Cherry
+            </ul>
+            <p>Fruit Scones</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 2 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 1 Apple
+                <li> <input type="checkbox" class="checkbox-round"> 1 Orange
+                <li> <input type="checkbox" class="checkbox-round"> 1 Pear
+                <li> <input type="checkbox" class="checkbox-round"> 1 Peach
+                <li> <input type="checkbox" class="checkbox-round"> 1 Cherry
+            </ul>
+            <p>Fruit-Topped Pancakes</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 2 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 1 Apple
+                <li> <input type="checkbox" class="checkbox-round"> 1 Orange
+                <li> <input type="checkbox" class="checkbox-round"> 1 Pear
+                <li> <input type="checkbox" class="checkbox-round"> 1 Peach
+                <li> <input type="checkbox" class="checkbox-round"> 1 Cherry
+            </ul>
+            <p>Mixed-Fruits Bagel Sandwich</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 2 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 1 Apple
+                <li> <input type="checkbox" class="checkbox-round"> 1 Orange
+                <li> <input type="checkbox" class="checkbox-round"> 1 Pear
+                <li> <input type="checkbox" class="checkbox-round"> 1 Peach
+                <li> <input type="checkbox" class="checkbox-round"> 1 Cherry
+            </ul>
+            <p>Mixed-Fruits Crepe</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 2 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 1 Apple
+                <li> <input type="checkbox" class="checkbox-round"> 1 Orange
+                <li> <input type="checkbox" class="checkbox-round"> 1 Pear
+                <li> <input type="checkbox" class="checkbox-round"> 1 Peach
+                <li> <input type="checkbox" class="checkbox-round"> 1 Cherry
+            </ul>
+            <p>Mixed-Fruits Pie</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 3 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 1 Apple
+                <li> <input type="checkbox" class="checkbox-round"> 1 Orange
+                <li> <input type="checkbox" class="checkbox-round"> 1 Pear
+                <li> <input type="checkbox" class="checkbox-round"> 1 Peach
+                <li> <input type="checkbox" class="checkbox-round"> 1 Cherry
+            </ul>
+            <p>Mixed-Fruits Sandwich</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 2 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 1 Orange
+                <li> <input type="checkbox" class="checkbox-round"> 1 Pear
+                <li> <input type="checkbox" class="checkbox-round"> 1 Peach
+            </ul>
+            <p>Mixed-Fruits Tart</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 1 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 1 Apple
+                <li> <input type="checkbox" class="checkbox-round"> 1 Orange
+                <li> <input type="checkbox" class="checkbox-round"> 1 Pear
+                <li> <input type="checkbox" class="checkbox-round"> 1 Peach
+                <li> <input type="checkbox" class="checkbox-round"> 1 Cherry
+            </ul>
+            <p>Orange Jelly</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 2 Oranges
+            </ul>
+            <p>Orange Marmalade</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 3 Oranges
+            </ul>
+            <p>Orange Pie</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 3 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 2 Sugar
+                <li> <input type="checkbox" class="checkbox-round"> 2 Oranges
+            </ul>
+            <p>Orange Pound Cake</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 2 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 1 Sugar
+                <li> <input type="checkbox" class="checkbox-round"> 2 Oranges
+            </ul>
+            <p>Orange Smoothie</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 2 Oranges
+            </ul>
+            <p>Orange Tart</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 1 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 1 Sugar
+                <li> <input type="checkbox" class="checkbox-round"> 1 Orange
+            </ul>
+            <p>Peach Jam</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 3 Peaches
+            </ul>
+            <p>Peach Jelly</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 2 Peaches
+            </ul>
+            <p>Peach Pie</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 3 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 2 Sugar
+                <li> <input type="checkbox" class="checkbox-round"> 2 Peaches
+            </ul>
+            <p>Peach Smoothie</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 2 Peaches
+            </ul>
+            <p>Peach Tart</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 1 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 1 Sugar
+                <li> <input type="checkbox" class="checkbox-round"> 1 Peach
+            </ul>
+            <p>Pear Jam</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 3 Pears
+            </ul>
+            <p>Pear Jelly</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 2 Pears
+            </ul>
+            <p>Pear Pie</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 3 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 2 Sugar
+                <li> <input type="checkbox" class="checkbox-round"> 2 Pears
+            </ul>
+            <p>Pear Smoothie</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 2 Pears
+            </ul>
+            <p>Pear Tart</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 1 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 1 Sugar
+                <li> <input type="checkbox" class="checkbox-round"> 1 Pear
+            </ul>
+            <p>Pumpkin Cupcakes</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 1 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 1 Sugar
+                <li> <input type="checkbox" class="checkbox-round"> 1 Orange Pumpkins
+            </ul>
+            <p>Pumpkin Curry</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 3 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 3 Orange Pumpkins
+            </ul>
+            <p>Pumpkin Pound Cake</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 2 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 1 Sugar
+                <li> <input type="checkbox" class="checkbox-round"> 2 Orange Pumpkins
+            </ul>
+            <p>Pumpkin Scones</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 2 Whole-Wheat Flour
+                <li> <input type="checkbox" class="checkbox-round"> 1 Sugar
+                <li> <input type="checkbox" class="checkbox-round"> 2 Orange Pumpkins
+            </ul>
+            <p>Pumpkin Soup</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 3 Orange Pumpkins
+            </ul>
+            <p>Tomates Al Ajillo</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 3 Tomatoes
+            </ul>
+            <p>Tomato Bagel Sandwich</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 2 Flour
+                <li> <input type="checkbox" class="checkbox-round"> 3 Tomatoes
+            </ul>
+            <p>Tomato Juice</p>
+            <ul style="list-style-type:none;">
+                <li> <input type="checkbox" class="checkbox-round"> 2 Tomatoes
+            </ul>
 
+        </div>
     </div>
 </body>
 
