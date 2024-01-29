@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'vfq3vqx',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-block-size: 100vb;
+            box-sizing: border-box;
+            background: rgb(255, 255, 232);
+            height: 100vh;
+        }
+
+        .grid {
+            display: grid;
+            min-block-size: 100vb;
+            grid-template-columns: repeat(14, 1fr);
+            grid-template-rows: repeat(12, auto);
+            height: 100vh;
+
+        }
+
+        /*background*/
+        .left {
+            margin: 0;
+            inline-size: 100%;
+            block-size: 100%;
+            grid-column: 1 / 3;
+            grid-row: 1/13;
+            height: 100vh;
+        }
+
+        .middle {
+            margin: 0;
+            inline-size: 100%;
+            block-size: 100%;
+            grid-column: 4 / 12;
+            grid-row: 1/13;
+            height: 100vh;
+        }
+
+        .right {
+            margin: 0;
+            inline-size: 100%;
+            block-size: 100%;
+            grid-column: 13 / 15;
+            grid-row: 1/13;
+            height: 100vh;
+
+        }
+
+        /*instructions button*/
+        .home {
+            margin: 0;
+            grid-column: 12/13;
+            grid-row: 1/1;
+            padding-left: 300px;
+            padding-top: 15px;
+            padding-right: 15px;
+        }
+
+        .home:hover {
+            filter: contrast(120%);
+        }
+
+        /*home button*/
+        .home {
+            margin: 0;
+            grid-column: 1/2;
+            grid-row: 1/3;
+            padding-top: 15px;
+            padding-left: 15px;
+            margin-right: 40px;
+        }
+
+        .home:hover {
+            filter: contrast(120%);
+        }
+
+        /*about button*/
+        .about {
+            grid-column: 14/15;
+            grid-row: 1/1;
+            padding-right: 15px;
+            padding-top: 15px;
+            margin-left: 50px;
+        }
+
+        .about:hover {
+            filter: contrast(120%);
+        }
+
+
+        @font-face {
+            font-family: fink-heavy;
+            src: url(fonts/fink-heavy.ttf) format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .nested {
+            display: grid;
+            background-color: rgba(222, 221, 169, 0);
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 10px;
+            grid-column: 3/13;
+            grid-row: 2/9;
+            margin-left: 10px;
+            overflow: auto;
+            height: 680px;
+            width: 880px;
+            grid-template-columns: 40px 170px 90px 170px 170px 170px;
+        }
+
+        .nested p {
+            font-family: "fot-seurat-pron", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            color: #5A3825;
+            text-align: center;
+            line-height: 1.3;
+        }
+
+        .nestedtop {
+            text-decoration: underline;
+            display: grid;
+            background-color: rgba(222, 221, 169, 0);
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 10px;
+            grid-column: 1/2;
+            grid-row: 7/9;
+            margin-left: 25px;
+            margin-right: 20px;
+            margin-top: 140px;
+            grid-column: 3/13;
+            grid-row: 1/2;
+            width: 855px;
+            grid-template-columns: 200px 100px 170px 170px 160px;
+        }
+
+        .nestedtop p {
+            font-family: "fot-seurat-pron", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            color: #5A3825;
+            text-align: center;
+        }
+
+        ul {
+            align-items: right;
+            font-family: "fot-seurat-pron", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            color: #5A3825;
+            margin-top: 5px;
+            line-height: 1.4;
+        }
+
+        .grid-item {
+            padding: 20px;
+            font-family: "fot-seurat-pron", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            color: #5A3825;
+            text-align: center;
+            line-height: 1.3;
+
+        }
+
+        h1 {
+            font-size: 60px;
+            grid-column: 3/13;
+            grid-row: 1/2;
+            padding-top: 0;
+            color: #5A3825;
+            line-height: 0%;
+            text-align: center;
+            margin-top: 60px;
+            font-family: fink-heavy;
+
+        }
+
+        h2 {
+            line-height: 80%;
+            color: #5A3825;
+            font-size: 40px;
+            grid-column: 3/13;
+            grid-row: 1/2;
+            margin-top: 90px;
+            text-align: center;
+            font-family: fink-heavy;
+
+        }
+
+        a:visited {
+            color: #5A3825;
+        }
+
+        a:link {
+            color: #5A3825;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <!--background-->
+        <img class="left" width="489" height="1600" src="moreinfo/left.JPG">
+        <img class="middle" width="1578" height="1600" src="moreinfo/middle.JPG">
+        <img class="right" width="488" height="1600" src="moreinfo/right.JPG">
+        <!--about button-->
+        <img class="about" href="about.html" width="121.095" height="53.46" src="images/about.PNG">
+        <img class="home" href="index.html" width="134" height="52" src="images/home.PNG">
+        <!--more info button-->
+        <!--<img class="moreinfo" width="152.28" height="51.03" src="images/moreinfo.PNG">-->
+        <h1>
+            ACNH
+        </h1>
+        <h2>
+            DIY Food & Drinks Recipes
+        </h2>
+        <div class="nestedtop">
+            <p>Name</p>
+            <p>Energy</p>
+            <p>Sell Price</p>
+            <p>Recipe</p>
+            <p>IRL Recipe</p>
+        </div>
+        <div class="nested">
+            <img src="food/Apple_Jam_NH_Icon.png" width="55" height="55">
+            <p>Apple Jam</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">450 Bells</p>
+            <div class="grid-item">
+                <li>3 Apples</li>
+            </div>
+            <div class="grid-item"><a href="https://www.delish.com/cooking/recipe-ideas/a29006817/apple-jam-recipe/"
+                    target="_blank">Apple
+                    Jam by Lena Abraham</a></div>
+
+            <img src="food/Apple_Jelly_NH_Icon.png" width="55" height="55">
+            <p>Apple Jelly</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">300 Bells</p>
+            <div class="grid-item">
+                <li>2 Apples</li>
+            </div>
+            <div class="grid-item"><a href="https://wholefully.com/apple-jelly-recipe/" target="_blank">Apple Jelly by
+                    Cassie Johnston</a></div>
+
+            <img src="food/Apple_Pie_NH_Icon.png" width="55" height="55">
+            <p>Apple Pie</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">1,800 Bells</p>
+            <div class="grid-item">
+                <li>3 Flour</li>
+                <li>2 Sugar</li>
+                <li>2 Apples</li>
+            </div>
+            <div class="grid-item"><a href="https://www.allrecipes.com/recipe/12682/apple-pie-by-grandma-ople/"
+                    target=”_blank”>Apple Pie by Moshamama</a></div>
+
+            <img src="food/Apple_Smoothie_NH_Icon.png" width="55" height="55">
+            <p>Apple Smoothie</p>
+            <p>2</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">300 Bells</p>
+            <div class="grid-item">
+                <li>2 Apples</li>
+            </div>
+            <div class="grid-item"><a href="https://www.wellplated.com/apple-smoothie/" target=”_blank”>Apple Smoothie
+                    by Erin Clarke</a></div>
+
+            <img src="food/Apple_Tart_NH_Icon.png" width="55" height="55">
+            <p>Apple Tart</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">780 Bells</p>
+            <div class="grid-item">
+                <li>1 Flour</li>
+                <li>1 Sugar</li>
+                <li>1 Apple</li>
+            </div>
+            <div class="grid-item"><a href="https://www.foodandwine.com/recipes/rustic-apple-tart" target=”_blank”>Apple
+                    Tart by Jacques Pepin & Grace Parisi</a>
+            </div>
+
+            <img src="food/Cherry_Jam_NH_Icon.png" width="55" height="55">
+            <p>Apple Tart</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">450 Bells</p>
+            <div class="grid-item">
+                <li>3 Cherries</li>
+            </div>
+            <div class="grid-item"><a href="https://www.threeolivesbranch.com/homemade-cherry-jam/"
+                    target=”_blank”>Cherry
+                    Jam by Kim</a>
+            </div>
+
+            <img src="food/Cherry_Jelly_NH_Icon.png" width="55" height="55">
+            <p>Cherry Jelly</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">300 Bells</p>
+            <div class="grid-item">
+                <li>2 Cherries</li>
+            </div>
+            <div class="grid-item"><a href="https://creativecanning.com/cherry-jelly/" target=”_blank”>Cherry Jelly by
+                    Ashley Adamant</a>
+            </div>
+
+            <img src="food/Cherry_Pie_NH_Icon.png" width="55" height="55">
+            <p>Cherry Pie</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">1,880 Bells</p>
+            <div class="grid-item">
+                <li>3 Flour</li>
+                <li>2 Sugar</li>
+                <li>2 Cherries</li>
+            </div>
+            <div class="grid-item"><a href="https://sallysbakingaddiction.com/cherry-pie/" target=”_blank”>Cherry Pie by
+                    Sally</a>
+            </div>
+
+            <img src="food/Cherry_Smoothie_NH_Icon.png" width="55" height="55">
+            <p>Cherry Smoothie</p>
+            <p>2</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">300 Bells</p>
+            <div class="grid-item">
+                <li>2 Cherries</li>
+            </div>
+            <div class="grid-item"><a href="https://joyfoodsunshine.com/cherry-smoothie/" target=”_blank”>Cherry
+                    Smoothie by
+                    Laura</a>
+            </div>
+
+            <img src="food/Cherry_Tart_NH_Icon.png" width="55" height="55">
+            <p>Cherry Tart</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">780 Bells</p>
+            <div class="grid-item">
+                <li>1 Flour</li>
+                <li>1 Sugar</li>
+                <li>1 Cherry</li>
+            </div>
+            <div class="grid-item"><a href="https://vintagekitchennotes.com/bill-grangers-fresh-cherry-tart/"
+                    target=”_blank”>Cherry Tart by Paula Montenegro</a>
+            </div>
+
+            <img src="food/Coconut_Cookies_NH_Icon.png" width="55" height="55">
+            <p>Coconut Cookies</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">1,010 Bells</p>
+            <div class="grid-item">
+                <li>1 Flour</li>
+                <li>1 Sugar</li>
+                <li>1 Coconut</li>
+            </div>
+            <div class="grid-item"><a href="https://www.allrecipes.com/recipe/9589/chewy-coconut-cookies/"
+                    target=”_blank”>Coconut Cookies by N Hoff</a>
+            </div>
+
+            <img src="food/Coconut_Juice_NH_Icon.png" width="55" height="55">
+            <p>Coconut Juice</p>
+            <p>Not Consumable</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">500 Bells</p>
+            <div class="grid-item">
+                <li>1 Coconut</li>
+            </div>
+            <div class="grid-item"><a href="https://vaya.in/recipes/details/coconut-juice/" target=”_blank”>Coconut
+                    Juice by
+                    Mithra Bhargav</a>
+            </div>
+
+            <img src="food/Coconut_Milk_NH_Icon.png" width="55" height="55">
+            <p>Coconut Milk</p>
+            <p>2</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">750 Bells</p>
+            <div class="grid-item">
+                <li>2 Coconut</li>
+            </div>
+            <div class="grid-item"><a href="https://minimalistbaker.com/how-to-make-coconut-milk/"
+                    target=”_blank”>Coconut
+                    Milk by Minimalist Baker</a>
+            </div>
+
+            <img src="food/Coconut_Oil_NH_Icon.png" width="55" height="55">
+            <p>Coconut Oil</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">1,130 Bells</p>
+            <div class="grid-item">
+                <li>3 Coconut</li>
+            </div>
+            <div class="grid-item"><a href="https://thecoconutmama.com/how-to-make-coconut-oil/" target=”_blank”>Coconut
+                    Oil
+                    by Tiffany</a>
+            </div>
+
+            <img src="food/Coconut_Pancakes_NH_Icon.png" width="55" height="55">
+            <p>Coconut Pancakes</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">2,010 Bells</p>
+            <div class="grid-item">
+                <li>2 Flour</li>
+                <li>2 Sugar</li>
+                <li>2 Coconuts</li>
+            </div>
+            <div class="grid-item"><a href="https://shewearsmanyhats.com/coconut-pancakes/" target=”_blank”>Coconut
+                    Pancakes
+                    by Amy Johnson</a>
+            </div>
+
+            <img src="food/Coconut_Pudding_NH_Icon.png" width="55" height="55">
+            <p>Coconut Pudding</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">1,070 Bells</p>
+            <div class="grid-item">
+                <li>1 Sugar</li>
+                <li>2 Coconuts</li>
+            </div>
+            <div class="grid-item"><a href="https://selfproclaimedfoodie.com/homemade-coconut-pudding/"
+                    target=”_blank”>Coconut Pudding by Krissy</a>
+            </div>
+
+            <img src="food/Fruit_Cupcakes_NH_Icon.png" width="55" height="55">
+            <p>Fruit Cupcakes</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">1,870 Bells</p>
+            <div class="grid-item">
+                <li>1 Flour</li>
+                <li>1 Apple</li>
+                <li>1 Orange</li>
+                <li>1 Pear</li>
+                <li>1 Peach</li>
+                <li>1 Cherry</li>
+            </div>
+            <div class="grid-item"><a href="https://bakerbynature.com/triple-berry-cupcakes/" target=”_blank”>Triple
+                    Berry
+                    Cupcakes by Ashley Manila</a>
+            </div>
+
+            <img src="food/Fruit_Pizza_NH_Icon.png" width="55" height="55">
+            <p>Fruit Cupcakes</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">2,500 Bells</p>
+            <div class="grid-item">
+                <li>3 Flour</li>
+                <li>1 Apple</li>
+                <li>1 Orange</li>
+                <li>1 Pear</li>
+                <li>1 Peach</li>
+                <li>1 Cherry</li>
+            </div>
+            <div class="grid-item"><a href="https://sallysbakingaddiction.com/fruit-pizza/" target=”_blank”>Fruit Pizza
+                    by
+                    Sally</a>
+            </div>
+
+            <img src="food/Fruit_Salad_NH_Icon.png" width="55" height="55">
+            <p>Fruit Salad</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">1,550 Bells</p>
+            <div class="grid-item">
+                <li>1 Apple</li>
+                <li>1 Orange</li>
+                <li>1 Pear</li>
+                <li>1 Peach</li>
+                <li>1 Cherry</li>
+            </div>
+            <div class="grid-item"><a href="https://www.allrecipes.com/recipe/214947/perfect-summer-fruit-salad/"
+                    target=”_blank”>Fruit Salad by Nicole Graham Holley</a>
+            </div>
+
+            <img src="food/Fruit_Scones_NH_Icon.png" width="55" height="55">
+            <p>Fruit Scones</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">2,180 Bells</p>
+            <div class="grid-item">
+                <li>2 Flour</li>
+                <li>1 Apple</li>
+                <li>1 Orange</li>
+                <li>1 Pear</li>
+                <li>1 Peach</li>
+                <li>1 Cherry</li>
+            </div>
+            <div class="grid-item"><a href="https://www.bbcgoodfood.com/recipes/fruit-scones" target=”_blank”>Fruit
+                    Scones
+                    by Cassie Best</a>
+            </div>
+
+            <img src="food/Fruit-Topped_Pancakes_NH_Icon.png" width="55" height="55">
+            <p>Fruit-Topped Pancakes</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">2,180 Bells</p>
+            <div class="grid-item">
+                <li>2 Flour</li>
+                <li>1 Apple</li>
+                <li>1 Orange</li>
+                <li>1 Pear</li>
+                <li>1 Peach</li>
+                <li>1 Cherry</li>
+            </div>
+            <div class="grid-item"><a href="https://markieskitchen.com/super-easy-pancakes-with-fruit-recipe/"
+                    target=”_blank”>Fruit Pancakes by Markie</a>
+            </div>
+
+            <img src="food/Mixed-Fruits_Bagel_Sandwich_NH_Icon.png" width="55" height="55">
+            <p>Mixed-Fruits Bagel Sandwich</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">2,180 Bells</p>
+            <div class="grid-item">
+                <li>2 Flour</li>
+                <li>1 Apple</li>
+                <li>1 Orange</li>
+                <li>1 Pear</li>
+                <li>1 Peach</li>
+                <li>1 Cherry</li>
+            </div>
+            <div class="grid-item"><a href="om/lorindabreeze/bagels-with-cream-cheese-and-fresh-fruits"
+                    target=”_blank”>Fresh Fruits Bagels by Lorinda</a>
+            </div>
+
+            <img src="food/Mixed-Fruits_Crepe_NH_Icon.png" width="55" height="55">
+            <p>Mixed-Fruits Crepe</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">2,180 Bells</p>
+            <div class="grid-item">
+                <li>2 Flour</li>
+                <li>1 Apple</li>
+                <li>1 Orange</li>
+                <li>1 Pear</li>
+                <li>1 Peach</li>
+                <li>1 Cherry</li>
+            </div>
+            <div class="grid-item"><a href="https://lmld.org/berries-and-cream-crepes/" target=”_blank”>Berries & Cream
+                    Crepes by Aimee</a>
+            </div>
+
+            <img src="food/Mixed-Fruits_Pie_NH_Icon.png" width="55" height="55">
+            <p>Mixed-Fruits Pie</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">2,500 Bells</p>
+            <div class="grid-item">
+                <li>3 Flour</li>
+                <li>1 Apple</li>
+                <li>1 Orange</li>
+                <li>1 Pear</li>
+                <li>1 Peach</li>
+                <li>1 Cherry</li>
+            </div>
+            <div class="grid-item"><a href="https://www.seriouseats.com/late-summer-mixed-fruit-pie-recipe"
+                    target=”_blank”>Mixed-Fruit Pie by Stella Parks</a>
+            </div>
+
+            <img src="food/Mixed-Fruits_Sandwich_NH_Icon.png" width="55" height="55">
+            <p>Mixed-Fruits Sandwich</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">2,180 Bells</p>
+            <div class="grid-item">
+                <li>2 Flour</li>
+                <li>1 Orange</li>
+                <li>1 Pear</li>
+                <li>1 Peach</li>
+            </div>
+            <div class="grid-item"><a href="https://www.justonecookbook.com/japanese-fruit-sandwich-fruit-sando/"
+                    target=”_blank”>Japanese Fruit Sandwich by Nami</a>
+            </div>
+
+            <img src="food/Mixed-Fruits_Tart_NH_Icon.png" width="55" height="55">
+            <p>Mixed-Fruits Tart</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">1,870 Bells</p>
+            <div class="grid-item">
+                <li>1 Flour</li>
+                <li>1 Apple</li>
+                <li>1 Orange</li>
+                <li>1 Pear</li>
+                <li>1 Peach</li>
+                <li>1 Cherry</li>
+            </div>
+            <div class="grid-item"><a href="url" target=”_blank”>Mixed Fruit Tart by Valerie Bertinelli</a>
+            </div>
+
+            <img src="food/Orange_Jelly_NH_Icon.png" width="55" height="55">
+            <p>Orange Jelly</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">300 Bells</p>
+            <div class="grid-item">
+                <li>2 Oranges</li>
+            </div>
+            <div class="grid-item"><a href="https://www.ballmasonjars.com/blog?cid=orange-jelly" target=”_blank”>Orange
+                    Jelly by Ball</a>
+            </div>
+
+            <img src="food/Orange_Marmalade_NH_Icon.png" width="55" height="55">
+            <p>Orange Marmalade</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">450 Bells</p>
+            <div class="grid-item">
+                <li>3 Oranges</li>
+            </div>
+            <div class="grid-item"><a href="https://tastesbetterfromscratch.com/orange-marmalade/"
+                    target=”_blank”>Orange
+                    Marmalade by Lauren Allen</a>
+            </div>
+
+            <img src="food/Orange_Pie_NH_Icon.png" width="55" height="55">
+            <p>Orange Pie</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">1,880 Bells</p>
+            <div class="grid-item">
+                <li>3 Flour</li>
+                <li>2 Sugar</li>
+                <li>2 Oranges</li>
+            </div>
+            <div class="grid-item"><a href="https://theaprilblake.com/a-simple-orange-pie/" target=”_blank”>Orange Pie
+                    by
+                    April</a>
+            </div>
+
+            <img src="food/Orange_Pound_Cake_NH_Icon.png" width="55" height="55">
+            <p>Orange Pound Cake</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">1,250 Bells</p>
+            <div class="grid-item">
+                <li>2 Flour</li>
+                <li>1 Sugar</li>
+                <li>2 Oranges</li>
+            </div>
+            <div class="grid-item"><a href="https://www.delscookingtwist.com/easy-orange-pound-cake/"
+                    target=”_blank”>Orange
+                    Pound Cake by Del</a>
+            </div>
+
+            <img src="food/Orange_Smoothie_NH_Icon.png" width="55" height="55">
+            <p>Orange Smoothie</p>
+            <p>2</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">300 Bells</p>
+            <div class="grid-item">
+                <li>2 Oranges</li>
+            </div>
+            <div class="grid-item"><a href="https://wholefully.com/orange-smoothie-recipe-creamsicle/"
+                    target=”_blank”>Orange Smoothie by Cassie Johnston</a>
+            </div>
+
+            <img src="food/Orange_Tart_NH_Icon.png" width="55" height="55">
+            <p>Orange Tart</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">780 Bells</p>
+            <div class="grid-item">
+                <li>1 Flour</li>
+                <li>1 Sugar</li>
+                <li>1 Orange</li>
+            </div>
+            <div class="grid-item"><a href="https://www.abakingjourney.com/french-orange-tart/" target=”_blank”>French
+                    Orange Tart by Sylvie</a>
+            </div>
+
+            <img src="food/Peach_Jam_NH_Icon.png" width="55" height="55">
+            <p>Peach Jam</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">450 Bells</p>
+            <div class="grid-item">
+                <li>3 Peaches</li>
+            </div>
+            <div class="grid-item"><a href="https://barefeetinthekitchen.com/peach-jam-made-by-my-man/"
+                    target=”_blank”>Peach Jam by Mary Younkin</a>
+            </div>
+
+            <img src="food/Peach_Jelly_NH_Icon.png" width="55" height="55">
+            <p>Peach Jelly</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">300 Bells</p>
+            <div class="grid-item">
+                <li>2 Peaches</li>
+            </div>
+            <div class="grid-item"><a href="https://addapinch.com/peach-jelly-recipe/" target=”_blank”>Peach Jelly by
+                    Robyn
+                    Stone</a>
+            </div>
+
+            <img src="food/Peach_Pie_NH_Icon.png" width="55" height="55">
+            <p>Peach Pie</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">1,880 Bells</p>
+            <div class="grid-item">
+                <li>3 Flour</li>
+                <li>2 Sugar</li>
+                <li>2 Peaches</li>
+            </div>
+            <div class="grid-item"><a href="https://sallysbakingaddiction.com/peach-pie-recipe/" target=”_blank”>Peach
+                    Pie
+                    by Sally</a>
+            </div>
+
+            <img src="food/Peach_Smoothie_NH_Icon.png" width="55" height="55">
+            <p>Peach Smoothie</p>
+            <p>2</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">300 Bells</p>
+            <div class="grid-item">
+                <li>2 Peaches</li>
+            </div>
+            <div class="grid-item"><a href="https://www.wellplated.com/peach-smoothie/" target=”_blank”>Peach Smoothie
+                    by
+                    Erin Clarke</a>
+            </div>
+
+            <img src="food/Peach_Tart_NH_Icon.png" width="55" height="55">
+            <p>Peach Tart</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">780 Bells</p>
+            <div class="grid-item">
+                <li>1 Flour</li>
+                <li>1 Sugar</li>
+                <li>1 Peach</li>
+            </div>
+            <div class="grid-item"><a href="https://food52.com/recipes/14217-peach-tart" target=”_blank”>Peach Tart by
+                    Amanda Hesser</a>
+            </div>
+
+            <img src="food/Pear_Jam_NH_Icon.png" width="55" height="55">
+            <p>Pear Jam</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">450 Bells</p>
+            <div class="grid-item">
+                <li>3 Pears</li>
+            </div>
+            <div class="grid-item"><a href="https://practicalselfreliance.com/pear-jam/" target=”_blank”>Pear Jam by
+                    Ashley
+                    Adamant</a>
+            </div>
+
+            <img src="food/Pear_Jelly_NH_Icon.png" width="55" height="55">
+            <p>Pear Jelly</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">300 Bells</p>
+            <div class="grid-item">
+                <li>2 Pears</li>
+            </div>
+            <div class="grid-item"><a href="https://www.thefoodblog.net/pear-jelly-recipe/" target=”_blank”>Pear Jelly
+                    by
+                    Colleen</a>
+            </div>
+
+            <img src="food/Pear_Pie_NH_Icon.png" width="55" height="55">
+            <p>Pear Pie</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">1,880 Bells</p>
+            <div class="grid-item">
+                <li>3 Flour</li>
+                <li>2 Sugar</li>
+                <li>2 Pears</li>
+            </div>
+            <div class="grid-item"><a href="https://www.allrecipes.com/recipe/12275/fresh-pear-pie/"
+                    target=”_blank”>Pear
+                    Pie by Carol</a>
+            </div>
+
+            <img src="food/Pear_Smoothie_NH_Icon.png" width="55" height="55">
+            <p>Pear Smoothie</p>
+            <p>2</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">300 Bells</p>
+            <div class="grid-item">
+                <li>2 Pears</li>
+            </div>
+            <div class="grid-item"><a href="https://www.theendlessmeal.com/pear-smoothie/" target=”_blank”>Pear Smoothie
+                    by Kristen Stevens</a>
+            </div>
+
+            <img src="food/Pear_Tart_NH_Icon.png" width="55" height="55">
+            <p>Pear Tart</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">780 Bells</p>
+            <div class="grid-item">
+                <li>1 Flour</li>
+                <li>1 Sugar</li>
+                <li>1 Pear</li>
+            </div>
+            <div class="grid-item"><a href="https://therecipecritic.com/pear-tart/" target=”_blank”>Pear Tart by Alyssa
+                    Rivers</a>
+            </div>
+
+            <img src="food/Pumpkin_Cupcakes_NH_Icon.png" width="55" height="55">
+            <p>Pumpkin Cupcakes</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">1,680 Bells</p>
+            <div class="grid-item">
+                <li>1 Flour</li>
+                <li>1 Sugar</li>
+                <li>2 Orange Pumpkins</li>
+            </div>
+            <div class="grid-item"><a
+                    href="https://sallysbakingaddiction.com/pumpkin-cupcakes-with-cream-cheese-frosting/"
+                    target=”_blank”>Pumpkin Cupcakes by Sally</a>
+            </div>
+
+            <img src="food/Pumpkin_Curry_NH_Icon.png" width="55" height="55">
+            <p>Pumpkin Curry</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">2,520 Bells</p>
+            <div class="grid-item">
+                <li>3 Flour</li>
+                <li>3 Orange Pumpkins</li>
+            </div>
+            <div class="grid-item"><a href="https://www.indianhealthyrecipes.com/pumpkin-curry-recipe/"
+                    target=”_blank”>Pumpkin Curry by Swasthi Shreekanth</a>
+            </div>
+
+            <img src="food/Pumpkin_Pound_Cake_NH_Icon.png" width="55" height="55">
+            <p>Pumpkin Pound Cake</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">2,000 Bells</p>
+            <div class="grid-item">
+                <li>2 Flour</li>
+                <li>1 Sugar</li>
+                <li>2 Orange Pumpkins</li>
+            </div>
+            <div class="grid-item"><a href="https://eatpicks.com/pumpkin-pound-cake/" target=”_blank”>Pumpkin Pound Cake
+                    by Kelly Pugliano</a>
+            </div>
+
+            <img src="food/Pumpkin_Scones_NH_Icon.png" width="55" height="55">
+            <p>Pumpkin Scones</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">2,000 Bells</p>
+            <div class="grid-item">
+                <li>2 Whole-Wheat Flour</li>
+                <li>1 Sugar</li>
+                <li>2 Orange Pumpkins</li>
+            </div>
+            <div class="grid-item"><a href="https://sallysbakingaddiction.com/pumpkin-scones/" target=”_blank”>Pumpking
+                    Scones by Sally</a>
+            </div>
+
+            <img src="food/Pumpkin_Soup_NH_Icon.png" width="55" height="55">
+            <p>Pumpkin Soup</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">1,260 Bells</p>
+            <div class="grid-item">
+                <li>3 Orange Pumpkins</li>
+            </div>
+            <div class="grid-item"><a href="https://www.loveandlemons.com/pumpkin-soup-recipe/" target=”_blank”>Pumpkin Soup by Jeanine Donofrio</a>
+            </div>
+
+            <img src="food/Tomates_al_Ajillo_NH_Icon.png" width="55" height="55">
+            <p>Tomates Al Ajillo</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">1,260 Bells</p>
+            <div class="grid-item">
+                <li>3 Tomatoes</li>
+            </div>
+            <div class="grid-item"><a href="https://www.youtube.com/watch?v=VTUjJEr401k" target=”_blank”>Tomates al ajillo by Noocookpedia</a>
+            </div>
+
+            <img src="food/Tomato_Bagel_Sandwich_NH_Icon.png" width="55" height="55">
+            <p>Tomato Bagel Sandwich</p>
+            <p>5</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">2,210 Bells</p>
+            <div class="grid-item">
+                <li>2 Flour</li>
+                <li>3 Tomatoes</li>
+            </div>
+            <div class="grid-item"><a href="https://www.allrecipes.com/recipe/21539/queenies-killer-tomato-bagel-sandwich/" target=”_blank”>Tomato Bagel Sandwich by Pattqueen</a>
+            </div>
+
+            <img src="food/Tomato_Juice_NH_Icon.png" width="55" height="55">
+            <p>Tomato Juice</p>
+            <p>2</p>
+            <p><img src="icons/bells.png" width="18.4" height="20">840 Bells</p>
+            <div class="grid-item">
+                <li>2 Tomatoes</li>
+            </div>
+            <div class="grid-item"><a href="https://www.favfamilyrecipes.com/homemade-tomato-juice/" target=”_blank”>Tomato Juice by Erica Walker</a>
+            </div>
+     
+        </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
