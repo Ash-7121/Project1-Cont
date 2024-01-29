@@ -1,0 +1,8 @@
+@media only screen and (max-width: 393px) {
+    .grid {
+        display: grid;
+        min-block-size: 100vb;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+}
