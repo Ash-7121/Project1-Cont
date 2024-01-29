@@ -86,6 +86,11 @@
             filter: contrast(120%);
         }
 
+        .linkhome{
+            margin: 0;
+            grid-column: 12/13;
+            grid-row: 1/1;
+        }
 
         /*more info button*/
         .moreinfo {
@@ -99,7 +104,13 @@
         .moreinfo:hover {
             filter: contrast(120%);
         }
-        
+
+        .linkmoreinfo{
+            margin: 0;
+            grid-column: 12/13;
+            grid-row: 1/1;
+        }
+
     </style>
 </head>
 
@@ -109,13 +120,11 @@
         <img class="wall" width="2560" height="1175" src="about/wall.JPG">
         <img class="bttm" width="2560" height="487" src="about/bttm.JPG">
         <img class="aboutbg" width="1086.5" height="574" src="about/about.PNG">
-        <!--instructions button-->
-        <img class="instructions" width="151.5" height="51" src="images/instructions.PNG">
         <!--about button-->
         <!--<a href="about.html"> <img class="about" href="about.html" width="121.095" height="53.46" src="images/about.PNG"></a>-->
-       <img class="home" href="index.html" width="134" height="52" src="images/home.PNG">
+        <a class="linkhome" href="index.html"><img class="home" href="index.html" width="134" height="52" src="images/home.PNG"></a>
         <!--more info button-->
-        <img class="moreinfo" width="152.28" height="51.03" src="images/moreinfo.PNG">
+        <a class="linkmoreinfo" href="moreinfo.html"><img class="moreinfo" width="152.28" height="51.03" src="images/moreinfo.PNG"></a>
     </div>
     </div>
 </body>
