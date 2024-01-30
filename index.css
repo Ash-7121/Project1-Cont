@@ -83,8 +83,8 @@
         grid-column: 11/12;
         grid-row: 1/1;
         margin-top: 15px;
-        margin-left: 15px;
-        width: 100%;
+      
+        width: 50%;
         height: auto;
     }
 
@@ -108,7 +108,7 @@
         grid-row: 1/1;
         margin-top: 15px;
         margin-left: 10px;
-        width: 100%;
+        width: 25%;
         height: auto;
     }
 
@@ -120,19 +120,18 @@
         margin: 0;
         grid-column: 10/11;
         grid-row: 1/1;
-        width: 70.08px;
-        height: 23.48px;
     }
 
     /*menu and circle*/
     .menuleft {
         margin: 0;
-        grid-column: 1/2;
-        grid-row: 7/9;
+        grid-column: 1/13;
+        grid-row: 4/7;
         padding-top: 10px;
-        padding-left: 30px;
+        padding-left: 10px;
+        width: 95%;
+        height: 45%;
         display: none;
-
     }
 
     .menuright {
