@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
     <script>
         (function (d) {
             var config = {
@@ -89,10 +90,10 @@
             width: 50px;
         }
 
-        .dropdown-content {   
+        .dropdown-content {
             display: none;
             position: absolute;
-            background-color: rgb(248,243,228);
+            background-color: rgb(248, 243, 228);
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             padding: 12px 16px;
@@ -415,20 +416,6 @@
             background-color: rgb(231, 98, 92);
         }
 
-
-
-
-        /*RESPONSIVE*/
-
-
-        @media only screen and (max-width: 393px) {
-            .grid {
-                display: grid;
-                min-block-size: 100vb;
-                grid-template-columns: repeat(12, 1fr);
-                grid-template-rows: repeat(12, auto);
-            }
-        }
     </style>
 </head>
 
@@ -440,8 +427,12 @@
         <img class="counter2" width="2560" height="92" src="images/3.PNG">
         <img class="counter3" width="2560" height="980" src="images/4.PNG">
         <!--instructions button-->
-        <div class="dropdown"><img class="instructions" width="151.5" height="51" src="images/instructions.PNG"><div class="dropdown-content"><p>instructions</p></div></div>
-        
+        <div class="dropdown"><img class="instructions" width="151.5" height="51" src="images/instructions.PNG">
+            <div class="dropdown-content">
+                <p>instructions</p>
+            </div>
+        </div>
+
         <!--about button-->
         <a class="linkabout" href="about.html"> <img class="about" href="about.html" width="121.095" height="53.46"
                 src="images/about.PNG"></a>
