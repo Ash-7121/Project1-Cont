@@ -108,7 +108,7 @@
         grid-row: 1/1;
         margin-left: 10px;
         margin-top: 15px;
-        width: 24%;
+        width: 100%;
         height: auto;
     }
 
@@ -120,8 +120,8 @@
         margin: 0;
         grid-column: 12/13;
         grid-row: 1/1;
-        width: 292px;
-        height: 66px;
+        width: 70.08px;
+        height: 23.48px;
     }
 
     /*menu and circle*/
