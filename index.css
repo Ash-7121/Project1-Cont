@@ -128,30 +128,30 @@
     .menuleft {
         margin: 0;
         grid-column: 1/13;
-        grid-row: 1/2;
-        width: 350px;
-        height: 200px;
+        grid-row: 4/7;
+        padding-top: 10px;
+        padding-left: 10px;
+        width: 95%;
+        height: 45%;
        
     }
 
     .menuright {
         margin: 0;
         grid-column: 12/13;
-        grid-row: 11/13;
+        grid-row: 7/9;
         padding-top: 10px;
         padding-right: 30px;
-        width: 300%;
-        height: 30%;
+        display: none;
 
     }
 
     .circle {
         margin: 0;
-        grid-column: 3/4;
-        grid-row: 4/7;
+        grid-column: 6/7;
+        grid-row: 8/9;
         padding-bottom: 45px;
-        width: 250px;
-        height: auto;
+        display: none;
 
     }
 
