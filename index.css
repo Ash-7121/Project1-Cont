@@ -26,6 +26,29 @@ body {
     z-index: 5;
 }
 
+.p2{
+    font-family: "fot-seurat-pron", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #5A3825;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+    width: 250px;
+    margin: 0;
+   margin-left: 15px;
+}
+
+.p3{
+    font-family: "fot-seurat-pron", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #5A3825;
+    text-align: left;
+    font-size: 14px;
+    width: 250px;
+}
+
 #clicked-buttons{
     display: none;
 }
@@ -95,6 +118,7 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
     z-index: 1;
+    border-radius: 25px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -409,6 +433,10 @@ body {
     text-decoration: underline;
     padding-top: 20px;
     padding-left: 30px;
+}
+
+.textcolorchange{
+    color:rgb(226, 91, 84);
 }
 
 /*nested grid*/
