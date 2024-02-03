@@ -752,11 +752,12 @@ ul {
     /*menu and circle*/
     .menuleft {
         margin: 0;
-        grid-column: 1/2;
-        grid-row: 7/9;
+        grid-column: 1/13;
+        grid-row: 4/7;
         padding-top: 10px;
-        padding-left: 30px;
-        display: none;
+        padding-left: 10px;
+        width: 90%;
+        height: 40%;
     }
 
     .menuright {
