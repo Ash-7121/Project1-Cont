@@ -1017,8 +1017,8 @@ ul {
         grid-row: 8/9;
         margin-left: 135px;
         margin-top: 100px;
-        width: 300px;
-        height: 300px;
+        width: 100px;
+        height: 100px;
         border: 2px solid blue;
     }
 
@@ -1031,7 +1031,7 @@ ul {
         width: 35%;
         height: auto;
         margin-left: 20px;
-        margin-top: 100px;
+        margin-top: 90px;
     }
 
     .apple:hover {
@@ -1040,142 +1040,152 @@ ul {
 
     .cherry {
         margin: 0;
-        grid-column: 12/13;
-        grid-row: 8/9;
-        margin-left: 220px;
-        margin-top: 45px;
-        display: none;
+        grid-column: 7/12;
+        grid-row: 6/12;
+        margin-right: 5px;
+        width: 30%;
+        height: auto;
+        margin-left: 20px;
+        margin-top: 140px;
     }
 
     .cherry:hover {
         filter: saturate(130%);
-        display: none;
     }
 
     .peach {
         margin: 0;
-        grid-column: 12/13;
-        grid-row: 8/9;
-        margin-left: 54px;
+        grid-column: 7/12;
+        grid-row: 6/12;
+        margin-right: 5px;
+        width: 30%;
+        height: auto;
+        margin-left: 80px;
         margin-top: 140px;
-        display: none;
     }
 
     .peach:hover {
         filter: saturate(150%);
-        display: none;
     }
 
     .orange {
         margin: 0;
-        grid-column: 12/13;
-        grid-row: 8/9;
-        margin-left: 164px;
-        margin-top: 140px;
-        display: none;
+        grid-column: 7/12;
+        grid-row: 7/12;
+        margin-right: 5px;
+        width: 30%;
+        height: auto;
+        margin-left: 20px;
+        margin-top: 65px;
     }
 
     .orange:hover {
         filter: saturate(130%);
-        display: none;
     }
 
     .tomato {
         margin: 0;
-        grid-column: 12/13;
-        grid-row: 8/9;
-        margin-left: 274px;
-        margin-top: 140px;
-        display: none;
+        grid-column: 7/12;
+        grid-row: 7/12;
+        margin-right: 5px;
+        width: 30%;
+        height: auto;
+        margin-left: 80px;
+        margin-top: 65px;
     }
 
     .tomato:hover {
         filter: saturate(130%);
-        display: none;
     }
 
     .pear {
         margin: 0;
-        grid-column: 12/13;
-        grid-row: 8/9;
-        margin-left: 54px;
-        margin-top: 235px;
-        display: none;
+        grid-column: 7/12;
+        grid-row: 7/12;
+        margin-right: 5px;
+        width: 30%;
+        height: auto;
+        margin-left: 20px;
+        margin-top: 120px;
     }
 
     .pear:hover {
         filter: saturate(150%);
-        display: none;
     }
 
     .pumpkin {
         margin: 0;
-        grid-column: 12/13;
-        grid-row: 8/9;
-        margin-left: 164px;
-        margin-top: 235px;
-        display: none;
+        grid-column: 7/12;
+        grid-row: 7/12;
+        margin-right: 5px;
+        width: 30%;
+        height: auto;
+        margin-left: 80px;
+        margin-top: 120px;
     }
 
     .pumpkin:hover {
         filter: saturate(130%);
-        display: none;
     }
 
     .coconut {
         margin: 0;
-        grid-column: 12/13;
-        grid-row: 8/9;
-        margin-left: 274px;
-        margin-top: 235px;
-        display: none;
+        grid-column: 7/12;
+        grid-row: 7/12;
+        margin-right: 5px;
+        width: 30%;
+        height: auto;
+        margin-left: 20px;
+        margin-top: 175px;
     }
 
     .coconut:hover {
         filter: saturate(130%);
-        display: none;
     }
 
     .flour {
         margin: 0;
-        grid-column: 12/13;
-        grid-row: 8/9;
-        margin-left: 54px;
-        margin-top: 330px;
-        display: none;
+        grid-column: 7/12;
+        grid-row: 7/12;
+        margin-right: 5px;
+        width: 30%;
+        height: auto;
+        margin-left: 80px;
+        margin-top: 175px;
     }
 
     .flour:hover {
         filter: saturate(130%);
-        display: none;
     }
 
     .sugar {
         margin: 0;
-        grid-column: 12/13;
-        grid-row: 8/9;
-        margin-left: 164px;
-        margin-top: 330px;
-        display: none;
+        grid-column: 7/12;
+        grid-row: 9/12;
+        margin-right: 5px;
+        width: 30%;
+        height: auto;
+        margin-left: 20px;
+        margin-top: 125px;
     }
 
     .sugar:hover {
         filter: saturate(130%);
-        display: none;
     }
 
     .wwflour {
         margin: 0;
-        grid-column: 12/13;
-        grid-row: 8/9;
-        margin-left: 274px;
-        margin-top: 330px;
-        display: none;
+        grid-column: 7/12;
+        grid-row: 9/12;
+        margin-right: 5px;
+        width: 30%;
+        height: auto;
+        margin-left: 80px;
+        margin-top: 125px;
     }
 
     .wwflour:hover {
         filter: saturate(160%);
-        display: none;
     }
 
 
