@@ -564,24 +564,8 @@ ul {
 /*IPHONE 14pro*/
 
 @media only screen and (max-width: 393px) {
-    body {
-        margin: 0;
-        padding: 0;
-        min-block-size: 100vb;
-        box-sizing: border-box;
-        background: rgb(73, 54, 38);
-        height: 100vh;
-        width: 100vw;
-    }
-    
-    .grid {
-        display: grid;
-        min-block-size: 100vb;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(12, auto);
-        width: 100vw;
-    }
-    
+  
+   /*IPHONE 14pro*/  
     #display {
         display: none;
         margin: 0;
@@ -592,6 +576,7 @@ ul {
         width: 200px;
         height: 200px;
         z-index: 5;
+        
     }
     
     .p2{
@@ -605,6 +590,7 @@ ul {
         width: 250px;
         margin: 0;
        margin-left: 15px;
+       display: none;
     }
     
     .p3{
@@ -615,6 +601,8 @@ ul {
         text-align: left;
         font-size: 14px;
         width: 250px;
+        display: none;
+
     }
     
     #clicked-buttons{
@@ -672,10 +660,14 @@ ul {
         margin-left: 10px;
         width: 140%;
         height: auto;
+        display: none;
+
     }
     
     .instructions:hover {
         filter: contrast(120%);
+        display: none;
+
     }
     
     .dropdown {
@@ -686,6 +678,8 @@ ul {
         display: inline-block;
         height: 90px;
         width: 50px;
+        display: none;
+
     }
     
     .dropdown-content {
@@ -697,6 +691,8 @@ ul {
         padding: 12px 16px;
         z-index: 1;
         border-radius: 25px;
+        display: none;
+
     }
     
     .dropdown:hover .dropdown-content {
@@ -704,6 +700,8 @@ ul {
         grid-column: 1/2;
         grid-row: 1/3;
         display: block;
+        display: none;
+
     }
     
     /*about button*/
@@ -720,6 +718,8 @@ ul {
     
     .about:hover {
         filter: contrast(120%);
+        display: none;
+
     }
     
     .linkabout {
@@ -743,6 +743,8 @@ ul {
     
     .start:hover {
         filter: contrast(120%);
+        display: none;
+
     }
     
     /*reset/MIX button*/
@@ -757,6 +759,8 @@ ul {
     
     .reset:hover {
         filter: contrast(120%);
+        display: none;
+
     }
     
     /*SEND FOOD button*/
@@ -771,6 +775,8 @@ ul {
     
     .sendfood:hover {
         filter: contrast(120%);
+        display: none;
+
     }
     
     
@@ -787,6 +793,8 @@ ul {
     
     .moreinfo:hover {
         filter: contrast(120%);
+        display: none;
+
     }
     
     .linkmoreinfo {
@@ -807,7 +815,8 @@ ul {
         padding-left: 10px;
         width: 28%;
         height: 45%;
-       
+        display: none;
+
     }
     
     .menuright {
@@ -844,6 +853,8 @@ ul {
         border-radius: 50%;
         overflow: hidden;
         z-index: 4;
+        display: none;
+
     }
     
     /*DROP AREA*/
@@ -879,6 +890,8 @@ ul {
     
     .apple:hover {
         filter: saturate(130%);
+        display: none;
+
     }
     
     .cherry {
@@ -892,6 +905,8 @@ ul {
     
     .cherry:hover {
         filter: saturate(130%);
+        display: none;
+
     }
     
     .peach {
@@ -905,6 +920,8 @@ ul {
     
     .peach:hover {
         filter: saturate(150%);
+        display: none;
+
     }
     
     .orange {
@@ -918,6 +935,8 @@ ul {
     
     .orange:hover {
         filter: saturate(130%);
+        display: none;
+
     }
     
     .tomato {
@@ -931,6 +950,8 @@ ul {
     
     .tomato:hover {
         filter: saturate(130%);
+        display: none;
+
     }
     
     .pear {
@@ -944,6 +965,8 @@ ul {
     
     .pear:hover {
         filter: saturate(150%);
+        display: none;
+
     }
     
     .pumpkin {
@@ -957,6 +980,8 @@ ul {
     
     .pumpkin:hover {
         filter: saturate(130%);
+        display: none;
+
     }
     
     .coconut {
@@ -970,6 +995,8 @@ ul {
     
     .coconut:hover {
         filter: saturate(130%);
+        display: none;
+
     }
     
     .flour {
@@ -983,6 +1010,8 @@ ul {
     
     .flour:hover {
         filter: saturate(130%);
+        display: none;
+
     }
     
     .sugar {
@@ -996,6 +1025,8 @@ ul {
     
     .sugar:hover {
         filter: saturate(130%);
+        display: none;
+
     }
     
     .wwflour {
@@ -1009,6 +1040,8 @@ ul {
     
     .wwflour:hover {
         filter: saturate(160%);
+        display: none;
+
     }
     
     /*menu titles*/
@@ -1049,6 +1082,8 @@ ul {
     
     .textcolorchange{
         color:rgb(226, 91, 84);
+        display: none;
+
     }
     
     /*nested grid*/
@@ -1133,6 +1168,8 @@ ul {
     
     .checkbox-round:checked {
         background-color: rgb(231, 98, 92);
+        display: none;
+
     }
     
     /* RESULTED FOOD */
