@@ -705,25 +705,26 @@ ul {
     /*about button*/
     .about {
         margin: 0;
-        grid-column: 12/13;
+        grid-column: 10/12;
         grid-row: 1/1;
-        margin-left: 310px;
         margin-top: 15px;
-        display: none;
+        margin-left: 10px;
+        width: 100%;
+        height: auto;
     }
 
     .about:hover {
         filter: contrast(120%);
-        display: none;
     }
 
     .linkabout {
         margin: 0;
-        grid-column: 12/13;
+        padding: 0;
+        grid-column: 10/12;
         grid-row: 1/1;
-        width: 121px;
-        height: 53;
-        display: none;
+        width: 60.5px;
+        height: 40px;
+ 
     }
 
     /*start/COOK button*/
