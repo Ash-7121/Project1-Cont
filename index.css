@@ -702,6 +702,19 @@ ul {
         width: 250px;
     }
 
+    .p4 {
+        font-family: "fot-seurat-pron", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: #5A3825;
+        text-align: center;
+        font-size: 10px;
+        width: 250px;
+        margin: 0;
+        margin-left: 15px;
+        line-height: 1.4;
+    }
+
     /*about button*/
     .about {
         margin: 0;
@@ -775,7 +788,7 @@ ul {
         grid-row: 3/7;
         margin-left: auto;
         margin-right: 95px;
-        margin-top: 60px;
+        margin-top: 50px;
         width: 60%;
         height: auto;
     }
