@@ -767,7 +767,7 @@ ul {
         margin: 0;
         grid-column: 1/13;
         grid-row: 6/13;
-        padding-left: 5px;
+        padding-left: 7px;
         width: 45%;
         height: 90%;
     }
@@ -779,17 +779,19 @@ ul {
         margin-right: 5px;
         width: 45%;
         height: 90%;
-        margin-left: 197px;
+        margin-left: 198px;
+        margin-top: 10px;
+        padding: 0;
     }
 
     .circle {
         margin: 0;
-        grid-column: 1/13;
+        grid-column: 1/12;
         grid-row: 3/7;
         margin-left: auto;
-        margin-right: 95px;
+        margin-right: 62px;
         margin-top: 50px;
-        width: 60%;
+        width: 65%;
         height: auto;
     }
 
@@ -818,58 +820,57 @@ ul {
         inline-size: 100%;
         block-size: 100%;
         text-align: center;
-        display: none;
+        width: 100vw;
     }
 
     #droppedImage {
         max-width: 100%;
         max-height: 100%;
-        display: none;
     }
 
      /*start/COOK button*/
      .start {
         margin: 0;
-        grid-column: 6/7;
-        grid-row: 7/9;
-        margin-left: 420px;
+        grid-column: 9/11;
+        grid-row: 3/9;
+        margin-left: 20px;
         margin-top: 45px;
-        display: none;
+        width: 80%;
+        height: auto;
     }
 
     .start:hover {
         filter: contrast(120%);
-        display: none;
     }
 
     /*reset/MIX button*/
     .reset {
         margin: 0;
-        grid-column: 6/7;
-        grid-row: 8/10;
-        margin-left: 420px;
-        margin-top: 360px;
-        display: none;
+        grid-column: 9/11;
+        grid-row: 5/9;
+        margin-top: 70px;
+        margin-left: 20px;
+        width: 80%;
+        height: auto;
     }
 
     .reset:hover {
         filter: contrast(120%);
-        display: none;
     }
 
     /*SEND FOOD button*/
     .sendfood {
         margin: 0;
-        grid-column: 6/7;
-        grid-row: 7/9;
-        margin-left: 5px;
+        grid-column: 1/3;
+        grid-row: 3/9;
+        margin-left: 30px;
         margin-top: 45px;
-        display: none;
+        width: 70%;
+        height: auto;
     }
 
     .sendfood:hover {
         filter: contrast(120%);
-        display: none;
     }
 
 
