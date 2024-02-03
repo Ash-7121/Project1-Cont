@@ -792,7 +792,7 @@ ul {
         grid-row: 3/7;
         margin-left: auto;
         margin-right: 62px;
-        margin-top: 30px;
+        margin-top: 25px;
         width: 65%;
         height: auto;
     }
@@ -934,7 +934,7 @@ ul {
         grid-gap: 1px;
         width: 40%;
         overflow: auto;
-        height: 315px;
+        height: 300px;
     }
 
     .nested p {
@@ -1029,7 +1029,7 @@ ul {
         width: 35%;
         height: auto;
         margin-left: 20px;
-        margin-top: 90px;
+        margin-top: 95px;
     }
 
     .apple:hover {
@@ -1044,7 +1044,7 @@ ul {
         width: 30%;
         height: auto;
         margin-left: 20px;
-        margin-top: 140px;
+        margin-top: 145px;
     }
 
     .cherry:hover {
@@ -1059,7 +1059,7 @@ ul {
         width: 30%;
         height: auto;
         margin-left: 80px;
-        margin-top: 140px;
+        margin-top: 145px;
     }
 
     .peach:hover {
@@ -1069,12 +1069,12 @@ ul {
     .orange {
         margin: 0;
         grid-column: 7/12;
-        grid-row: 7/12;
+        grid-row: 6/12;
         margin-right: 5px;
         width: 30%;
         height: auto;
         margin-left: 20px;
-        margin-top: 65px;
+        margin-top: 200px;
     }
 
     .orange:hover {
@@ -1084,12 +1084,12 @@ ul {
     .tomato {
         margin: 0;
         grid-column: 7/12;
-        grid-row: 7/12;
+        grid-row: 6/12;
         margin-right: 5px;
         width: 30%;
         height: auto;
         margin-left: 80px;
-        margin-top: 65px;
+        margin-top: 200px;
     }
 
     .tomato:hover {
@@ -1099,12 +1099,12 @@ ul {
     .pear {
         margin: 0;
         grid-column: 7/12;
-        grid-row: 7/12;
+        grid-row: 6/12;
         margin-right: 5px;
         width: 30%;
         height: auto;
         margin-left: 20px;
-        margin-top: 120px;
+        margin-top: 255px;
     }
 
     .pear:hover {
@@ -1114,12 +1114,12 @@ ul {
     .pumpkin {
         margin: 0;
         grid-column: 7/12;
-        grid-row: 7/12;
+        grid-row: 6/12;
         margin-right: 5px;
         width: 30%;
         height: auto;
         margin-left: 80px;
-        margin-top: 120px;
+        margin-top: 255px;
     }
 
     .pumpkin:hover {
@@ -1129,12 +1129,12 @@ ul {
     .coconut {
         margin: 0;
         grid-column: 7/12;
-        grid-row: 7/12;
+        grid-row: 6/12;
         margin-right: 5px;
         width: 30%;
         height: auto;
         margin-left: 20px;
-        margin-top: 175px;
+        margin-top: 310px;
     }
 
     .coconut:hover {
@@ -1144,12 +1144,12 @@ ul {
     .flour {
         margin: 0;
         grid-column: 7/12;
-        grid-row: 7/12;
+        grid-row: 6/12;
         margin-right: 5px;
         width: 30%;
         height: auto;
         margin-left: 80px;
-        margin-top: 175px;
+        margin-top: 310px;
     }
 
     .flour:hover {
@@ -1159,12 +1159,12 @@ ul {
     .sugar {
         margin: 0;
         grid-column: 7/12;
-        grid-row: 9/12;
+        grid-row: 6/12;
         margin-right: 5px;
         width: 30%;
         height: auto;
         margin-left: 20px;
-        margin-top: 125px;
+        margin-top: 365px;
     }
 
     .sugar:hover {
@@ -1174,12 +1174,12 @@ ul {
     .wwflour {
         margin: 0;
         grid-column: 7/12;
-        grid-row: 9/12;
+        grid-row: 6/12;
         margin-right: 5px;
         width: 30%;
         height: auto;
         margin-left: 80px;
-        margin-top: 125px;
+        margin-top: 365px;
     }
 
     .wwflour:hover {
