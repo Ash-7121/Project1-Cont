@@ -810,7 +810,6 @@ ul {
         border-radius: 50%;
         overflow: hidden;
         z-index: 4;
-        border: 1px solid black;
     }
 
     /*DROP AREA*/
@@ -936,7 +935,6 @@ ul {
         width: 40%;
         overflow: auto;
         height: 315px;
-        border: 1px solid black;
     }
 
     .nested p {
@@ -1020,7 +1018,6 @@ ul {
         margin-top: 100px;
         width: 100px;
         height: 100px;
-        border: 2px solid blue;
     }
 
     /*icons*/
