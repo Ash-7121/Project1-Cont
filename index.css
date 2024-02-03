@@ -776,10 +776,10 @@ ul {
         margin: 0;
         grid-column: 1/13;
         grid-row: 6/13;
-        padding-right: 15px;
+        padding-right: 5px;
         width: 45%;
         height: 90%;
-        margin-left: 200px;
+        margin-left: 197px;
     }
 
     .circle {
