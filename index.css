@@ -753,11 +753,10 @@ ul {
     .menuleft {
         margin: 0;
         grid-column: 1/13;
-        grid-row: 4/7;
-        padding-top: 10px;
+        grid-row: 6/13;
         padding-left: 10px;
-        width: 90%;
-        height: 40%;
+        width: 45%;
+        height: 90%;
     }
 
     .menuright {
@@ -772,10 +771,10 @@ ul {
     .circle {
         margin: 0;
         grid-column: 1/13;
-        grid-row: 5/9;
+        grid-row: 3/7;
         margin-left: auto;
-        margin-right: 100px;
-        margin-top: 50px;
+        margin-right: 95px;
+        margin-top: 60px;
         width: 60%;
         height: auto;
     }
