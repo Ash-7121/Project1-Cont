@@ -109,6 +109,7 @@ body {
 
 .instructions:hover {
     filter: contrast(120%);
+    cursor: pointer;
 }
 
 .dropdown {
@@ -171,6 +172,7 @@ body {
 
 .start:hover {
     filter: contrast(120%);
+    cursor: pointer;
 }
 
 /*reset/MIX button*/
@@ -184,6 +186,7 @@ body {
 
 .reset:hover {
     filter: contrast(120%);
+    cursor: pointer;
 }
 
 /*SEND FOOD button*/
@@ -197,6 +200,7 @@ body {
 
 .sendfood:hover {
     filter: contrast(120%);
+    cursor: pointer;
 }
 
 
@@ -212,6 +216,7 @@ body {
 
 .moreinfo:hover {
     filter: contrast(120%);
+    cursor: pointer;
 }
 
 .linkmoreinfo {
@@ -292,6 +297,7 @@ body {
 
 .apple:hover {
     filter: saturate(130%);
+    cursor: pointer;
 }
 
 .cherry {
@@ -304,6 +310,7 @@ body {
 
 .cherry:hover {
     filter: saturate(130%);
+    cursor: pointer;
 }
 
 .peach {
@@ -316,6 +323,7 @@ body {
 
 .peach:hover {
     filter: saturate(150%);
+    cursor: pointer;
 }
 
 .orange {
@@ -328,6 +336,7 @@ body {
 
 .orange:hover {
     filter: saturate(130%);
+    cursor: pointer;
 }
 
 .tomato {
@@ -340,6 +349,7 @@ body {
 
 .tomato:hover {
     filter: saturate(130%);
+    cursor: pointer;
 }
 
 .pear {
@@ -352,6 +362,7 @@ body {
 
 .pear:hover {
     filter: saturate(150%);
+    cursor: pointer;
 }
 
 .pumpkin {
@@ -364,6 +375,7 @@ body {
 
 .pumpkin:hover {
     filter: saturate(130%);
+    cursor: pointer;
 }
 
 .coconut {
@@ -376,6 +388,7 @@ body {
 
 .coconut:hover {
     filter: saturate(130%);
+    cursor: pointer;
 }
 
 .flour {
@@ -388,6 +401,7 @@ body {
 
 .flour:hover {
     filter: saturate(130%);
+    cursor: pointer;
 }
 
 .sugar {
@@ -400,6 +414,7 @@ body {
 
 .sugar:hover {
     filter: saturate(130%);
+    cursor: pointer;
 }
 
 .wwflour {
@@ -412,6 +427,7 @@ body {
 
 .wwflour:hover {
     filter: saturate(160%);
+    cursor: pointer;
 }
 
 /*menu titles*/
@@ -505,7 +521,7 @@ ul {
     font-weight: 600;
     font-style: normal;
     color: #5A3825;
-    margin-top: 10px;
+    margin-top: 15px;
     line-height: 1.4;
 }
 
