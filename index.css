@@ -49,6 +49,17 @@ body {
     width: 250px;
 }
 
+.p4 {
+    font-family: "fot-seurat-pron", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #5A3825;
+    text-align: left;
+    margin:auto;
+    font-size: 14px;
+    width: 250px;
+}
+
 #clicked-buttons {
     display: none;
 }
