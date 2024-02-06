@@ -60,6 +60,10 @@ body {
     width: 250px;
 }
 
+.phone{
+   display: none;
+}
+
 #clicked-buttons {
     display: none;
 }
