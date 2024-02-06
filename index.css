@@ -1744,6 +1744,22 @@ ul {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(12, auto);
     }
+
+    .phone{
+        grid-column: 4/10;
+        grid-row: 6/9;
+        font-family: "fot-seurat-pron", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 50px;
+        color: #5A3825;
+        text-align: center;
+        font-size: 20px;
+        width: 250px;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
     
     #display {
         display: none;
@@ -1758,39 +1774,14 @@ ul {
     }
     
     .p2 {
-        font-family: "fot-seurat-pron", sans-serif;
-        font-weight: 600;
-        font-style: normal;
-        color: #5A3825;
-        text-align: center;
-        font-size: 20px;
-        text-decoration: underline;
-        width: 250px;
-        margin: 0;
-        margin-left: 15px;
         display: none;
     }
     
     .p3 {
-        font-family: "fot-seurat-pron", sans-serif;
-        font-weight: 600;
-        font-style: normal;
-        color: #5A3825;
-        text-align: left;
-        font-size: 14px;
-        width: 250px;
         display: none;
     }
     
     .p4 {
-        font-family: "fot-seurat-pron", sans-serif;
-        font-weight: 600;
-        font-style: normal;
-        color: #5A3825;
-        text-align: left;
-        margin: auto;
-        font-size: 14px;
-        width: 250px;
         display: none;
     }
     
