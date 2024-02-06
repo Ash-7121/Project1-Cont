@@ -502,63 +502,11 @@
         hideImage();
         removeImages();
         clearImages();
+        
     }
 
     // Assign handleClick function to the button's onclick attribute
     document.getElementById("reset2").onclick = handleClick;
-
-//CODE FOR SHOWING THE RESULTED IN THE CIRCLE!!!!!
-
-$(document).ready(function () {
-        const $buttons = $('.button');
-        const $display = $('#display');
-        const $clickedButtons = $('#clicked-buttons');
-        const $reset = $('#reset2');
-
-        // Array to track clicked buttons
-        var values = [];
-
-        $reset.on('click', function () {
-            // Reset the values array and update the displayed clicked buttons
-            values = [];
-            $clickedButtons.text('Clicked Buttons: ');
-            // Clear the displayed image
-            $display.attr('src', '');
-            // Hide the image
-            $display.hide();
-        });
-
-        $buttons.on('click', function () {
-            const $button = $(this);
-            const value = $button.data('value'); // Use data-value attribute
-
-            // If there are already 5 previously clicked buttons, start a new combination
-            if (values.length === 15) {
-                values = [];
-            }
-
-            values.push(value);
-            $clickedButtons.text('Clicked Buttons: ' + values.join(', '));
-
-            // Form a key by joining the values array
-            const key = values.join('');
-
-            // Display the corresponding image based on the key
-            $display.attr('src', 'output/' + key + '.png');
-
-            // Show the image when Button B is clicked
-            if (value === 'B') {
-                $display.show();
-            }
-            // Make the displayed image draggable
-            $display[0].addEventListener('dragstart', function (e) {
-                // Set the data to be dragged
-                e.dataTransfer.setData('text/plain', 'Dropped Image');
-            });
-        });
-
-
-    });
 
 
 
@@ -611,55 +559,54 @@ $(document).ready(function () {
     //CODE FOR SHOWING THE RESULTED IN THE CIRCLE!!!!!
 
     $(document).ready(function () {
-        const $buttons = $('.button');
-        const $display = $('#display');
-        const $clickedButtons = $('#clicked-buttons');
-        const $reset = $('#reset');
+    const $buttons = $('.button');
+    const $display = $('#display');
+    const $clickedButtons = $('#clicked-buttons');
+    const $reset = $('#reset, #reset2'); // Merge selectors for both reset buttons
 
-        // Array to track clicked buttons
-        var values = [];
+    // Array to track clicked buttons
+    var values = [];
 
-        $reset.on('click', function () {
-            // Reset the values array and update the displayed clicked buttons
-            values = [];
-            $clickedButtons.text('Clicked Buttons: ');
-            // Clear the displayed image
-            $display.attr('src', '');
-            // Hide the image
-            $display.hide();
-        });
-
-        $buttons.on('click', function () {
-            const $button = $(this);
-            const value = $button.data('value'); // Use data-value attribute
-
-            // If there are already 5 previously clicked buttons, start a new combination
-            if (values.length === 15) {
-                values = [];
-            }
-
-            values.push(value);
-            $clickedButtons.text('Clicked Buttons: ' + values.join(', '));
-
-            // Form a key by joining the values array
-            const key = values.join('');
-
-            // Display the corresponding image based on the key
-            $display.attr('src', 'output/' + key + '.png');
-
-            // Show the image when Button B is clicked
-            if (value === 'B') {
-                $display.show();
-            }
-            // Make the displayed image draggable
-            $display[0].addEventListener('dragstart', function (e) {
-                // Set the data to be dragged
-                e.dataTransfer.setData('text/plain', 'Dropped Image');
-            });
-        });
-
-
+    $reset.on('click', function () {
+        // Reset the values array and update the displayed clicked buttons
+        values = [];
+        $clickedButtons.text('Clicked Buttons: ');
+        // Clear the displayed image
+        $display.attr('src', '');
+        // Hide the image
+        $display.hide();
     });
+
+    $buttons.on('click', function () {
+        const $button = $(this);
+        const value = $button.data('value'); // Use data-value attribute
+
+        // If there are already 5 previously clicked buttons, start a new combination
+        if (values.length === 15) {
+            values = [];
+        }
+
+        values.push(value);
+        $clickedButtons.text('Clicked Buttons: ' + values.join(', '));
+
+        // Form a key by joining the values array
+        const key = values.join('');
+
+        // Display the corresponding image based on the key
+        $display.attr('src', 'output/' + key + '.png');
+
+        // Show the image when Button B is clicked
+        if (value === 'B') {
+            $display.show();
+        }
+        // Make the displayed image draggable
+        $display[0].addEventListener('dragstart', function (e) {
+            // Set the data to be dragged
+            e.dataTransfer.setData('text/plain', 'Dropped Image');
+        });
+    });
+});
+
 
 
 
