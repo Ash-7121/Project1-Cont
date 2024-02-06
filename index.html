@@ -30,16 +30,20 @@
         <!--instructions button-->
         <div class="dropdown"><img class="instructions" width="151.5" height="51" src="images/instructions.PNG">
             <div class="dropdown-content">
-                <p class="p2">Instructions<ol class="p3">
-                    <li>The ingredients must be clicked in the EXACT order as written in the recipes. If you make a mistake press 'Clear' to reset. (Will be adding this button soon)</li>
-                    <li>Press 'Mix' once you have finished clicking all the ingredients you need.</li>
-                    <li>Press 'Cook'</li>
-                    <li>Certain foods may require you to press 'Cook' more than once. How many times you need to press it will be written under their name if required.</li>
-                    <li>If you'd like, you can drag the food you created to the counter. This function may not work on mobile devices.</li>
+                <p class="p2">Instructions
+                    <p class="p4">This website is best viewed in fullscreen mode.</p><ol class="p3">
+                    <li>The ingredients must be clicked in the EXACT order as written in the recipes. If you click on
+                        the wrong ingredient press 'Clear' to reset.</li>
+                    <li>Press 'Cook' once you have finished clicking all the ingredients you need.</li>
+                    <li>Certain foods may require you to press 'Cook' more than once. How many times you need to press
+                        it will be written under their name if required.</li>
+                    <li>If you'd like, you can drag the food you created to the counter.</li>
                     <li>Press 'Send Food' to start making a new food.</li>
-                  </ol>  
-                  <p class="p4">Some things may look or be positioned weirdly based on your device as this website was designed using a Macbook Pro 13" and Iphone 14pro as reference</p>
-                    </p>
+                </ol>
+                <p class="p4">Some things may look or be positioned weirdly based on your device as this website was
+                    designed using a Macbook Pro 13"</p>
+
+                </p>
             </div>
         </div>
 
@@ -57,25 +61,64 @@
         <img class="circle" width="421.85" height="416.35" src="images/circle.PNG">
 
         <!--start and restart-->
-        <img data-value="B" class="start button" id="start2" width="67.496" height="66.616" src="images/cook.PNG">
-        <img data-value="R" class="reset" id="reset2" width="67.496" height="66.616" onclick="removeImages()"
-            src="images/mix.PNG">
+        <img data-value="B" class="start button" id="start2" width="67.496" height="66.616" onclick="removeImages()"
+            src="images/cook.PNG">
+        <img class="reset" id="reset2" width="67.496" height="66.616" src="images/clear4.PNG">
+        <!--<img data-value="R" class="reset" id="reset2" width="67.496" height="66.616" 
+            src="images/mix.PNG">-->
         <img data-value="D" class="sendfood" id="reset" width="67.496" height="66.616" onclick="hideImage()"
             src="images/sendfood.PNG">
 
 
         <!--food icons-->
-        <img class="apple button" data-value="A" id="apple2" width="96" height="85.8" src="icons/apple.PNG">
-        <img class="cherry button" data-value="C" id="cherry2" width="95.4" height="87.6" src="icons/cherry.PNG">
-        <img class="peach button" data-value="P" id="peach2" width="96" height="88.2" src="icons/peach.PNG">
-        <img class="orange button" data-value="O" id="orange2" width="95.4" height="86.4" src="icons/orange.PNG">
-        <img class="tomato button" data-value="T" id="tomato2" width="96.6" height="87.6" src="icons/tomato.PNG">
-        <img class="pear button" data-value="E" id="pear2" width="96" height="87.6" src="icons/pear.PNG">
-        <img class="pumpkin button" data-value="U" id="pumpkin2" width="96.6" height="88.2" src="icons/pumpkin.PNG">
-        <img class="coconut button" data-value="N" id="coconut2" width="96" height="87.6" src="icons/coconut.PNG">
-        <img class="flour button" data-value="F" id="flour2" width="94.8" height="87" src="icons/flour.PNG">
-        <img class="sugar button" data-value="S" id="sugar2" width="95.4" height="87.6" src="icons/sugar.PNG">
-        <img class="wwflour button" data-value="W" id="wwflour2" width="95.4" height="87.6" src="icons/wwflour.PNG">
+        <div class="tooltipa"> <img class="apple button" data-value="A" id="apple2" width="96" height="85.8"
+                src="icons/apple.PNG">
+
+            <span class="tooltiptext">apple</span>
+        </div>
+
+        <div class="tooltipc"> <img class="cherry button" data-value="C" id="cherry2" width="95.4" height="87.6"
+                src="icons/cherry.PNG">
+            <span class="tooltiptext">cherry</span>
+        </div>
+
+        <div class="tooltipp"> <img class="peach button" data-value="P" id="peach2" width="96" height="88.2"
+                src="icons/peach.PNG">
+            <span class="tooltiptext">peach</span>
+        </div>
+
+        <div class="tooltipo"> <img class="orange button" data-value="O" id="orange2" width="95.4" height="86.4" src="icons/orange.PNG">
+        <span class="tooltiptext">orange</span>
+    </div>
+
+    <div class="tooltipt"> <img class="tomato button" data-value="T" id="tomato2" width="96.6" height="87.6" src="icons/tomato.PNG">
+        <span class="tooltiptext">tomato</span>
+    </div>
+
+    <div class="tooltipe"> <img class="pear button" data-value="E" id="pear2" width="96" height="87.6" src="icons/pear.PNG">
+        <span class="tooltiptext">pear</span>
+    </div>
+        
+    <div class="tooltipu"> <img class="pumpkin button" data-value="U" id="pumpkin2" width="96.6" height="88.2" src="icons/pumpkin.PNG">
+        <span class="tooltiptext">pumpkin</span>
+    </div>
+        
+    <div class="tooltipn"> <img class="coconut button" data-value="N" id="coconut2" width="96" height="87.6" src="icons/coconut.PNG">
+        <span class="tooltiptext">coconut</span>
+    </div>
+        
+    <div class="tooltipf"> <img class="flour button" data-value="F" id="flour2" width="94.8" height="87" src="icons/flour.PNG">
+        <span class="tooltiptext">flour</span>
+    </div>
+        
+    <div class="tooltips"> <img class="sugar button" data-value="S" id="sugar2" width="95.4" height="87.6" src="icons/sugar.PNG">
+        <span class="tooltiptext">sugar</span>
+    </div>
+        
+    <div class="tooltipw"> <img class="wwflour button" data-value="W" id="wwflour2" width="95.4" height="87.6" src="icons/wwflour.PNG">
+        <span class="tooltiptext">wwflour</span>
+    </div>
+        
 
         <h1 class="ingredients">Ingredients</h1>
         <h1 class="recipes">Recipes</h1>
@@ -416,6 +459,52 @@
 
 </body>
 <script>
+
+    //CLEAR BUTTON
+    // Define hideImage, removeImages, and clearImages in the global scope or attach them to an object
+
+    function hideImage() {
+        // Hide the image in dropArea
+        document.getElementById('centerDiv').innerHTML = '';
+        document.getElementById('display').innerHTML = '';
+        document.getElementById('.image-container').innerHTML = '';
+        document.getElementById('dropArea').innerHTML = '';
+    }
+
+    function removeImages() {
+        // Remove specific images
+        for (let i = 0; i < createdImages.length; i++) {
+            document.getElementById('centerDiv').removeChild(createdImages[i]);
+        }
+
+        // Clear the array
+        createdImages = [];
+    }
+
+    function clearImages() {
+        // Remove all existing images
+        var specificArea = document.getElementById('centerDiv');
+        var images = specificArea.querySelectorAll('.image-container');
+
+        images.forEach(function (image) {
+            specificArea.removeChild(image);
+        });
+
+        // Clear the array
+        createdImages = [];
+    }
+
+    // Define handleClick function
+    function handleClick() {
+        hideImage();
+        removeImages();
+        clearImages();
+    }
+
+    // Assign handleClick function to the button's onclick attribute
+    document.getElementById("reset2").onclick = handleClick;
+
+
 
 
 
