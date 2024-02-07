@@ -600,53 +600,67 @@
     //CODE FOR SHOWING THE RESULTED IN THE CIRCLE!!!!!
 
     $(document).ready(function () {
-        const $buttons = $('.button');
-        const $display = $('#display');
-        const $clickedButtons = $('#clicked-buttons');
-        const $reset = $('#reset, #reset2'); // Merge selectors for both reset buttons
+    const $buttons = $('.button');
+    const $display = $('#display');
+    const $clickedButtons = $('#clicked-buttons');
+    const $reset = $('#reset, #reset2'); // Merge selectors for both reset buttons
 
-        // Array to track clicked buttons
-        var values = [];
+    // Array to track clicked buttons
+    var values = [];
 
-        $reset.on('click', function () {
-            // Reset the values array and update the displayed clicked buttons
+    $reset.on('click', function () {
+        // Reset the values array and update the displayed clicked buttons
+        values = [];
+        $clickedButtons.text('Clicked Buttons: ');
+        // Clear the displayed image
+        $display.attr('src', '');
+        // Hide the image
+        $display.hide();
+    });
+
+    $buttons.on('click', function () {
+        const $button = $(this);
+        const value = $button.data('value'); // Use data-value attribute
+
+        // If there are already 5 previously clicked buttons, start a new combination
+        if (values.length === 15) {
             values = [];
-            $clickedButtons.text('Clicked Buttons: ');
-            // Clear the displayed image
-            $display.attr('src', '');
-            // Hide the image
+        }
+
+        values.push(value);
+        $clickedButtons.text('Clicked Buttons: ' + values.join(', '));
+
+        // Form a key by joining the values array
+        const key = values.join('');
+
+        // Check if the image corresponding to the key exists in the output folder
+        const imagePath = 'output/' + key + '.png';
+        const imageExists = checkImageExists(imagePath);
+
+        // Display the image if it exists, otherwise hide the display area
+        if (imageExists) {
+            $display.attr('src', imagePath);
+            $display.show();
+        } else {
             $display.hide();
-        });
+        }
 
-        $buttons.on('click', function () {
-            const $button = $(this);
-            const value = $button.data('value'); // Use data-value attribute
-
-            // If there are already 5 previously clicked buttons, start a new combination
-            if (values.length === 15) {
-                values = [];
-            }
-
-            values.push(value);
-            $clickedButtons.text('Clicked Buttons: ' + values.join(', '));
-
-            // Form a key by joining the values array
-            const key = values.join('');
-
-            // Display the corresponding image based on the key
-            $display.attr('src', 'output/' + key + '.png');
-
-            // Show the image when Button B is clicked
-            if (value === 'B') {
-                $display.show();
-            }
-            // Make the displayed image draggable
-            $display[0].addEventListener('dragstart', function (e) {
-                // Set the data to be dragged
-                e.dataTransfer.setData('text/plain', 'Dropped Image');
-            });
+        // Make the displayed image draggable
+        $display[0].addEventListener('dragstart', function (e) {
+            // Set the data to be dragged
+            e.dataTransfer.setData('text/plain', 'Dropped Image');
         });
     });
+
+    // Function to check if an image exists at a given URL
+    function checkImageExists(imageUrl) {
+        var http = new XMLHttpRequest();
+        http.open('HEAD', imageUrl, false);
+        http.send();
+        return http.status != 404;
+    }
+});
+
 
 
 
