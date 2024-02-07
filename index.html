@@ -31,7 +31,8 @@
         <div class="dropdown"><img class="instructions" width="151.5" height="51" src="images/instructions.PNG">
             <div class="dropdown-content">
                 <p class="p2">Instructions
-                    <p class="p4">This website is best viewed in fullscreen mode.</p><ol class="p3">
+                <p class="p4">This website is best viewed in fullscreen mode.</p>
+                <ol class="p3">
                     <li>The ingredients must be clicked in the EXACT order as written in the recipes. If you click on
                         the wrong ingredient press 'Clear' to reset.</li>
                     <li>Press 'Cook' once you have finished clicking all the ingredients you need.</li>
@@ -41,14 +42,21 @@
                     <li>Press 'Send Food' to start making a new food.</li>
                 </ol>
                 <p class="p4">Some things may look or be positioned weirdly based on your device as this website was
-                    designed using a Macbook Pro 13"</p>
+                    designed using a Macbook Pro 13" as reference</p>
 
                 </p>
             </div>
         </div>
 
-        <div class="phone"><p5>Welcome to Ashley's Website</p5> <br> <p5>Please view this website on a desktop/laptop</p5></div>
-        
+      <!--  <div class="phone">
+            <p5>Welcome to Ashley's Website</p5> <br>
+            <p5>Please view this website on a desktop/laptop</p5>
+        </div>-->
+
+        <!--INTRO IMAGE-->
+        <img class="website" id="introImage" src="images/website.PNG" alt="Intro Image">
+
+        <img class="phone" id="introImage" src="images/phone.PNG" alt="Intro Image">
 
         <!--about button-->
         <a class="linkabout" href="about.html"> <img class="about" href="about.html" width="121.095" height="53.46"
@@ -90,38 +98,46 @@
             <span class="tooltiptext">peach</span>
         </div>
 
-        <div class="tooltipo"> <img class="orange button" data-value="O" id="orange2" width="95.4" height="86.4" src="icons/orange.PNG">
-        <span class="tooltiptext">orange</span>
-    </div>
+        <div class="tooltipo"> <img class="orange button" data-value="O" id="orange2" width="95.4" height="86.4"
+                src="icons/orange.PNG">
+            <span class="tooltiptext">orange</span>
+        </div>
 
-    <div class="tooltipt"> <img class="tomato button" data-value="T" id="tomato2" width="96.6" height="87.6" src="icons/tomato.PNG">
-        <span class="tooltiptext">tomato</span>
-    </div>
+        <div class="tooltipt"> <img class="tomato button" data-value="T" id="tomato2" width="96.6" height="87.6"
+                src="icons/tomato.PNG">
+            <span class="tooltiptext">tomato</span>
+        </div>
 
-    <div class="tooltipe"> <img class="pear button" data-value="E" id="pear2" width="96" height="87.6" src="icons/pear.PNG">
-        <span class="tooltiptext">pear</span>
-    </div>
-        
-    <div class="tooltipu"> <img class="pumpkin button" data-value="U" id="pumpkin2" width="96.6" height="88.2" src="icons/pumpkin.PNG">
-        <span class="tooltiptext">pumpkin</span>
-    </div>
-        
-    <div class="tooltipn"> <img class="coconut button" data-value="N" id="coconut2" width="96" height="87.6" src="icons/coconut.PNG">
-        <span class="tooltiptext">coconut</span>
-    </div>
-        
-    <div class="tooltipf"> <img class="flour button" data-value="F" id="flour2" width="94.8" height="87" src="icons/flour.PNG">
-        <span class="tooltiptext">flour</span>
-    </div>
-        
-    <div class="tooltips"> <img class="sugar button" data-value="S" id="sugar2" width="95.4" height="87.6" src="icons/sugar.PNG">
-        <span class="tooltiptext">sugar</span>
-    </div>
-        
-    <div class="tooltipw"> <img class="wwflour button" data-value="W" id="wwflour2" width="95.4" height="87.6" src="icons/wwflour.PNG">
-        <span class="tooltiptext">wwflour</span>
-    </div>
-        
+        <div class="tooltipe"> <img class="pear button" data-value="E" id="pear2" width="96" height="87.6"
+                src="icons/pear.PNG">
+            <span class="tooltiptext">pear</span>
+        </div>
+
+        <div class="tooltipu"> <img class="pumpkin button" data-value="U" id="pumpkin2" width="96.6" height="88.2"
+                src="icons/pumpkin.PNG">
+            <span class="tooltiptext">pumpkin</span>
+        </div>
+
+        <div class="tooltipn"> <img class="coconut button" data-value="N" id="coconut2" width="96" height="87.6"
+                src="icons/coconut.PNG">
+            <span class="tooltiptext">coconut</span>
+        </div>
+
+        <div class="tooltipf"> <img class="flour button" data-value="F" id="flour2" width="94.8" height="87"
+                src="icons/flour.PNG">
+            <span class="tooltiptext">flour</span>
+        </div>
+
+        <div class="tooltips"> <img class="sugar button" data-value="S" id="sugar2" width="95.4" height="87.6"
+                src="icons/sugar.PNG">
+            <span class="tooltiptext">sugar</span>
+        </div>
+
+        <div class="tooltipw"> <img class="wwflour button" data-value="W" id="wwflour2" width="95.4" height="87.6"
+                src="icons/wwflour.PNG">
+            <span class="tooltiptext">wwflour</span>
+        </div>
+
 
         <h1 class="ingredients">Ingredients</h1>
         <h1 class="recipes">Recipes</h1>
@@ -463,6 +479,23 @@
 </body>
 <script>
 
+    //SHOW MARSHAL 
+    document.addEventListener('DOMContentLoaded', function() {
+    // Show the image
+    document.getElementById('introImage').style.opacity = '1';
+
+    // Set a timeout to start fading out the image after 4 seconds
+    setTimeout(function() {
+        document.getElementById('introImage').style.opacity = '0';
+    }, 2000); // 4000 milliseconds = 4 seconds
+
+    // Set a timeout to hide the image after 5 seconds
+    setTimeout(function() {
+        document.getElementById('introImage').style.display = 'none';
+    }, 3000); // 5000 milliseconds = 5 seconds
+});
+
+
     //CLEAR BUTTON
     // Define hideImage, removeImages, and clearImages in the global scope or attach them to an object
 
@@ -502,7 +535,7 @@
         hideImage();
         removeImages();
         clearImages();
-        
+
     }
 
     // Assign handleClick function to the button's onclick attribute
@@ -559,53 +592,53 @@
     //CODE FOR SHOWING THE RESULTED IN THE CIRCLE!!!!!
 
     $(document).ready(function () {
-    const $buttons = $('.button');
-    const $display = $('#display');
-    const $clickedButtons = $('#clicked-buttons');
-    const $reset = $('#reset, #reset2'); // Merge selectors for both reset buttons
+        const $buttons = $('.button');
+        const $display = $('#display');
+        const $clickedButtons = $('#clicked-buttons');
+        const $reset = $('#reset, #reset2'); // Merge selectors for both reset buttons
 
-    // Array to track clicked buttons
-    var values = [];
+        // Array to track clicked buttons
+        var values = [];
 
-    $reset.on('click', function () {
-        // Reset the values array and update the displayed clicked buttons
-        values = [];
-        $clickedButtons.text('Clicked Buttons: ');
-        // Clear the displayed image
-        $display.attr('src', '');
-        // Hide the image
-        $display.hide();
-    });
-
-    $buttons.on('click', function () {
-        const $button = $(this);
-        const value = $button.data('value'); // Use data-value attribute
-
-        // If there are already 5 previously clicked buttons, start a new combination
-        if (values.length === 15) {
+        $reset.on('click', function () {
+            // Reset the values array and update the displayed clicked buttons
             values = [];
-        }
+            $clickedButtons.text('Clicked Buttons: ');
+            // Clear the displayed image
+            $display.attr('src', '');
+            // Hide the image
+            $display.hide();
+        });
 
-        values.push(value);
-        $clickedButtons.text('Clicked Buttons: ' + values.join(', '));
+        $buttons.on('click', function () {
+            const $button = $(this);
+            const value = $button.data('value'); // Use data-value attribute
 
-        // Form a key by joining the values array
-        const key = values.join('');
+            // If there are already 5 previously clicked buttons, start a new combination
+            if (values.length === 15) {
+                values = [];
+            }
 
-        // Display the corresponding image based on the key
-        $display.attr('src', 'output/' + key + '.png');
+            values.push(value);
+            $clickedButtons.text('Clicked Buttons: ' + values.join(', '));
 
-        // Show the image when Button B is clicked
-        if (value === 'B') {
-            $display.show();
-        }
-        // Make the displayed image draggable
-        $display[0].addEventListener('dragstart', function (e) {
-            // Set the data to be dragged
-            e.dataTransfer.setData('text/plain', 'Dropped Image');
+            // Form a key by joining the values array
+            const key = values.join('');
+
+            // Display the corresponding image based on the key
+            $display.attr('src', 'output/' + key + '.png');
+
+            // Show the image when Button B is clicked
+            if (value === 'B') {
+                $display.show();
+            }
+            // Make the displayed image draggable
+            $display[0].addEventListener('dragstart', function (e) {
+                // Set the data to be dragged
+                e.dataTransfer.setData('text/plain', 'Dropped Image');
+            });
         });
     });
-});
 
 
 
